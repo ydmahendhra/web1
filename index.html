@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Phoenix Tech Solutions - Project & Intern Management System</title>
+    <meta name="description" content="Official enterprise project and intern lifecycle management platform for Phoenix Tech Solutions with role-based access control." />
+    <meta property="og:title" content="Phoenix Tech Solutions - Project & Intern Management System" />
+    <meta property="og:description" content="Official enterprise project and intern lifecycle management platform for Phoenix Tech Solutions with role-based access control." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="icon" type="image/png" href="/assets/aistudio/image_c321df86.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300..800;1,300..800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <script>
+      // Gracefully suppress Vite HMR WebSocket errors per environment constraints (HMR is disabled in AI Studio)
+      window.addEventListener('unhandledrejection', function (event) {
+        var reason = event && event.reason;
+        var msg = (reason && (reason.stack || reason.message || String(reason))) || '';
+        if (typeof msg === 'string' && (msg.includes('WebSocket') || msg.includes('vite') || msg.includes('createWebSocketModuleRunnerTransport'))) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+      window.addEventListener('error', function (event) {
+        var err = event && (event.error || event.message);
+        var msg = (err && (err.stack || err.message || String(err))) || '';
+        var filename = (event && event.filename) || '';
+        if ((typeof msg === 'string' && (msg.includes('WebSocket') || msg.includes('vite') || msg.includes('createWebSocketModuleRunnerTransport'))) || filename.includes('@vite/client')) {
+          event.preventDefault();
+          event.stopImmediatePropagation();
+        }
+      }, true);
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

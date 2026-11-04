@@ -1,0 +1,6 @@
+{
+  "name": "NexusProject - Role-Based Project & Intern Management System",
+  "description": "Professional enterprise project management and intern lifecycle portal with role-based access for Admins, Interns, and Staff.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
